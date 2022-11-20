@@ -1,0 +1,26 @@
+.categories {
+    background-color: rgb(84, 106, 123);
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    position: relative;
+}
+
+.scrolling-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.categories-card {
+    background-color: #FFEEDB;
+    flex: 0 0 auto;
+    height: 20vh;
+    margin: 15px;
+    width: 50%;
+}

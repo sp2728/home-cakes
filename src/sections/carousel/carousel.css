@@ -1,0 +1,22 @@
+.carousel-container {
+    height: 50vh;
+    position: relative;
+    background-color:whitesmoke;
+}
+
+.carousel {
+    height: 90%;
+}
+
+.carousel-item-container {
+    padding: 40px;
+    background-color: bisque;
+    width: 75%;
+    margin: 10%;
+    border-radius: 5%;
+}
+
+.carousel-image {
+    max-width: 60%;
+    object-fit: contain;
+}

@@ -1,0 +1,59 @@
+{
+    "baseUrl": "",
+    "header": {
+        "applicationTitle": "Cakes",
+        "applicationName": "Sai Home Cakes"
+
+    },
+    "pages": [ "home" ],
+    "sections": {
+        "introduction": {
+            "name": "Navya Vanam",
+            "type": "introduction",
+            "description": "Lorem ipsum dolor sit amet. Eos accusantium consequatur aut eaque quis et rerum provident ab voluptatem doloribus aut facilis quasi non adipisci quasi ea blanditiis laudantium. Et dolorem dolorem et dolore nisi aut error voluptatibus aut necessitatibus rerum ut unde doloribus."
+        },
+        "reviews": {
+            "type": "carousel",
+            "items": [
+                {
+                    "description": "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+                    "link": "www.google.com",
+                    "src": "carousel-one",
+                    "title": "First slide label"
+
+                },
+                {
+                    "description": "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+                    "link": "www.google.com",
+                    "src": "carousel-two",
+                    "title": "Second label"
+                }
+            ]
+        },
+        "categories": {
+            "type": "categories",
+            "items": [
+                {
+                    "title": "Layered Cakes"
+                },
+                {
+                    "title": "Pound Cakes"
+                },
+                {
+                    "title": "Indian Sweet Cakes"
+                },
+                {
+                    "title": "Layered Cakes"
+                },
+                {
+                    "title": "Pound Cakes"
+                },
+                {
+                    "title": "Indian Sweet Cakes"
+                }
+            ]
+
+        }
+    }
+
+}

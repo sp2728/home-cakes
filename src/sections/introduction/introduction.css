@@ -1,0 +1,28 @@
+.introduction{
+    height: 50vh;
+    background-color: #546A7B;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 5%;
+    align-items: center;
+}
+
+.image-container{
+    padding-left: 10px;
+}
+
+.image{
+    object-fit: contain;
+    height: 20vh;
+}
+
+.name{
+    color: #FDFDFF;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.description {
+    font-size: 12px;
+}
