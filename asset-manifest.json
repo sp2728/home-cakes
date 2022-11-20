@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/home-cakes/static/css/main.8d65e1ea.css",
+    "main.js": "/home-cakes/static/js/main.7b598712.js",
+    "static/js/787.f3b8b7a2.chunk.js": "/home-cakes/static/js/787.f3b8b7a2.chunk.js",
+    "static/media/carousel-one.png": "/home-cakes/static/media/carousel-one.4cc725d331186b99dbc3.png",
+    "static/media/carousel-two.png": "/home-cakes/static/media/carousel-two.aeb264d8dc7eee4bcbdd.png",
+    "static/media/person.png": "/home-cakes/static/media/person.0074232fbc5bc35562c4.png",
+    "index.html": "/home-cakes/index.html",
+    "main.8d65e1ea.css.map": "/home-cakes/static/css/main.8d65e1ea.css.map",
+    "main.7b598712.js.map": "/home-cakes/static/js/main.7b598712.js.map",
+    "787.f3b8b7a2.chunk.js.map": "/home-cakes/static/js/787.f3b8b7a2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d65e1ea.css",
+    "static/js/main.7b598712.js"
+  ]
+}
