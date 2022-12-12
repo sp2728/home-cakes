@@ -1,0 +1,44 @@
+.reviews {
+    background-color: #F0EDEE;
+    padding: 50px;
+}
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.reviews-title {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: cursive;
+    margin-bottom: 40px;
+}
+
+.review-item {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    border-radius: 25px;
+    background-color: antiquewhite;
+    box-shadow: 1px 2px 30px 3px rgb(123,63,0, 0.2);
+}
+
+.review-comment {
+    height: 70%;
+    font-size: 16px;
+    display: grid;
+    place-content: center;
+}
+
+.review-author {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    font-weight: bold;
+    border-top: 1px solid rgb(123,63,0, 0.2);
+}

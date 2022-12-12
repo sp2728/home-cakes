@@ -1,4 +1,6 @@
 .footer {
     height: 3vh;
-    justify-content: center;
+    padding: 5px;
+    display: grid;
+    place-content: center;
 }

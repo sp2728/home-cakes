@@ -1,35 +1,46 @@
-import React from 'react'
 import { Button, Card } from 'react-bootstrap';
 import './categories.css';
 
+import layeredCake from '../../assets/images/layered_cake.jpg';
+import rightArrow from '../../assets/images/right-arrow.svg';
+import { cakeTypes } from '../../constants';
+
+
 interface Props {
-  pageName: string;
-  items: Item[]
+  items: Item[],
+  title: string,
+  description: string;
 }
 
 interface Item {
   title: string;
+  src: string;
 }
 
-const Categories = ({ pageName, items }: Props) => {
+const Categories = ({ items, title, description }: Props) => {
+  
+  const Item = (item: Item) => {
 
-  const Item = (item: Item) => (
-    <Card className='categories-card'>
-      {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
-      <Card.Body>
-        <Card.Title>{item.title}</Card.Title>
-        {/* <Card.Text>
+    let image : any = cakeTypes[item.src];
+  
+  return  <Card className='categories-card'>
+      <Card.Img className='categories-image' variant="top" src={image} />
+      <Card.Body className='categories-body'>
+        <Card.Title className='chocolate-text bold'>{item.title}</Card.Title>
+        <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button> */}
+        <Button variant="">Read More <span><img width='25px' src={rightArrow}/></span></Button>
       </Card.Body>
     </Card>
-  )
+  }
   return (
-    <div className='categories' id={pageName}>
+    <div id='products' className='categories'>
+      <div className='categories-title'> {title} </div>
+      <div className='categories-description'> {description}</div>
       <div className='scrolling-wrapper'>
-        {items.map((item) => <Item {...item}/>)}
+        {items.map((item) => <Item {...item} key={item.title}/>)}
       </div>
     </div>
   )

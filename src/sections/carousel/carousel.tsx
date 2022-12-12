@@ -12,19 +12,18 @@ interface CarouselItem {
 
 interface CarouselSlide {
     items: CarouselItem[]
-    pageName: string;
 }
 
-const CarouselSlide = ({ items, pageName }: CarouselSlide) => {
+const CarouselSlide = ({ items }: CarouselSlide) => {
 
     return (
-        <div className='carousel-container' id={pageName}>
+        <div id='reviews' className='carousel-container'>
             <h2> Reviews </h2>
             <Carousel className='carousel'>
                 {items.map((item: CarouselItem, index) =>
                     <Carousel.Item className='carousel-item' key={index}>
                         <div className='carousel-item-container'>
-                            <img
+                            {/* <img
                                 className="carousel-image"
                                 src={Images.carousel[item.src]}
                                 alt={item.title}
@@ -33,7 +32,7 @@ const CarouselSlide = ({ items, pageName }: CarouselSlide) => {
                                 This is the revoew texyt. And cannot be changesd as per the necc era
                                 This is the revoew texyt. And cannot be changesd as per the necc era
 
-                            </div>
+                            </div> */}
                         </div>
 
                         {/* <Carousel.Caption className="carousel-content">

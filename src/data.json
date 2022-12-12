@@ -2,7 +2,7 @@
     "baseUrl": "",
     "header": {
         "applicationTitle": "Cakes",
-        "applicationName": "Sai Home Cakes"
+        "applicationName": "Cakesy"
 
     },
     "pages": [ "home" ],
@@ -12,8 +12,27 @@
             "type": "introduction",
             "description": "Lorem ipsum dolor sit amet. Eos accusantium consequatur aut eaque quis et rerum provident ab voluptatem doloribus aut facilis quasi non adipisci quasi ea blanditiis laudantium. Et dolorem dolorem et dolore nisi aut error voluptatibus aut necessitatibus rerum ut unde doloribus."
         },
+        "products": {
+            "type": "categories",
+            "title": "Our specialties",
+            "description": "Lorem ipsum dolor sit amet. Eos accusantium consequatur aut eaque quis et rerum provident ab voluptatem doloribus aut facilis quasi non adipisci quasi ea blanditiis laudantium. Et dolorem dolorem et dolore nisi aut error voluptatibus aut necessitatibus rerum ut unde doloribus.",
+            "items": [
+                {
+                    "title": "Layered Cakes",
+                    "src": "layered_cake"
+                },
+                {
+                    "title": "Pound Cakes",
+                    "src": "pound_cake"
+                },
+                {
+                    "title": "Indian Sweet Cakes",
+                    "src": "cupcakes"
+                }
+            ]
+        },
         "reviews": {
-            "type": "carousel",
+            "type": "reviews",
             "items": [
                 {
                     "description": "Nulla vitae elit libero, a pharetra augue mollis interdum.",
@@ -29,31 +48,6 @@
                     "title": "Second label"
                 }
             ]
-        },
-        "categories": {
-            "type": "categories",
-            "items": [
-                {
-                    "title": "Layered Cakes"
-                },
-                {
-                    "title": "Pound Cakes"
-                },
-                {
-                    "title": "Indian Sweet Cakes"
-                },
-                {
-                    "title": "Layered Cakes"
-                },
-                {
-                    "title": "Pound Cakes"
-                },
-                {
-                    "title": "Indian Sweet Cakes"
-                }
-            ]
-
         }
     }
-
 }

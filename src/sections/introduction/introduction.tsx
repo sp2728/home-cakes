@@ -1,26 +1,23 @@
 import './introduction.css';
 import image from '../../assets/images/person.png';
+import { Button } from '@mui/material';
 
 interface Introduction {
   description: string;
   name: string;
-  pageName: string;
 }
 
-const Introduction = ({ description, name, pageName }: Introduction) => {
+const Introduction = ({ description, name }: Introduction) => {
 
   return (
-    <div className='introduction' key={pageName}>
-      <div className='image-container'>
-        <img
-          className="image"
-          src={image}
-          alt={name}
-        />
-      </div>
-      <div className='content'>
-          <div className='name'> {name} </div>
-          <div className='description'> {description}</div>
+    <div id='introduction' className='introduction'>
+      <div className='intro-container'>
+        <div className='intro-title'> Delicous cake for everyone </div>
+        <div className='intro-description'>{description}</div>
+        <div className='intro-author'>
+          <span> Prepared by: </span>
+          <img className="image" src={image} alt={name} />
+        </div>
       </div>
     </div>
   )
