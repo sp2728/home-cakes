@@ -1,10 +1,8 @@
 import { Button, Card } from 'react-bootstrap';
 import './categories.css';
 
-import layeredCake from '../../assets/images/layered_cake.jpg';
 import rightArrow from '../../assets/images/right-arrow.svg';
 import { cakeTypes } from '../../constants';
-
 
 interface Props {
   items: Item[],
@@ -31,7 +29,7 @@ const Categories = ({ items, title, description }: Props) => {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="">Read More <span><img width='25px' src={rightArrow}/></span></Button>
+        <Button className='categories-button' variant="">Read More <span><img width='25px' src={rightArrow}/></span></Button>
       </Card.Body>
     </Card>
   }

@@ -1,5 +1,5 @@
-import React from 'react';
 import './reviews.css';
+import image from '../../assets/images/person.png';
 
 
 const Reviews = () => {
@@ -12,7 +12,8 @@ const Reviews = () => {
                 "Lorem ipsum dolor sit amet. Eos accusantium consequatur aut eaque quis et rerum provident ab voluptatem doloribus aut facilis quasi non adipisci quasi ea blanditiis laudantium."
             </div>
             <div className='review-author'>
-                Harry Webster
+                <img className="review-image" src={image} alt={'name'} />
+                <span>Harry Webster</span>
             </div>
         </div>
     )

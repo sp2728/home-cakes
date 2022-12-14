@@ -4,11 +4,9 @@ import Data from '../../data.json';
 import './home.css';
 import { Components, sectionMap } from '../../constants';
 import Footer from '../../sections/footer/footer';
-import Contact from '../../sections/contact/contact';
-import { Button } from '@mui/material';
-import { MarkChatUnread } from '@mui/icons-material';
 import facebookIcons from '../../assets/images/facebook.svg';
 import instagramIcon from '../../assets/images/instagram.svg'
+import Sheet from '../../components/sheet/sheet';
 
 const Home = () => {
 
@@ -30,9 +28,9 @@ const Home = () => {
       <Navbar sections={Data.sections} applicationName={Data.header.applicationName} handleContactPage={() => setOpenContact(true)} />
       <FloatButtons />
       {sectionsContent}
+      <Sheet open={openContact} position={'right'} handleClose={()=> setOpenContact(false)}/>
       <Footer />
-      <span className='contact-btn'><Button onClick={() => setOpenContact(true)}> <MarkChatUnread color='primary' /> </Button></span>
-      <Contact show={openContact} handleClose={() => setOpenContact(false)} />
+      {/* <span className='contact-btn'><Button onClick={() => setOpenContact(true)}> <MarkChatUnread color='primary' /> </Button></span> */}
     </div>
   )
 }

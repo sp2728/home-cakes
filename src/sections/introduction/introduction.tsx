@@ -1,6 +1,5 @@
 import './introduction.css';
 import image from '../../assets/images/person.png';
-import { Button } from '@mui/material';
 
 interface Introduction {
   description: string;

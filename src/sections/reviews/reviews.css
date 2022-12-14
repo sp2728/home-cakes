@@ -36,9 +36,15 @@
 .review-author {
     height: 30%;
     display: flex;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     padding: 25px;
     font-weight: bold;
     border-top: 1px solid rgb(123,63,0, 0.2);
+}
+
+.review-image {
+    border-radius: 50%;
+    height: 30px;
 }
