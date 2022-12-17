@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/home-cakes/static/css/main.6c1ad416.css",
-    "main.js": "/home-cakes/static/js/main.9817c71b.js",
+    "main.css": "/home-cakes/static/css/main.cd3783e0.css",
+    "main.js": "/home-cakes/static/js/main.ef3c9e73.js",
     "static/js/787.f3b8b7a2.chunk.js": "/home-cakes/static/js/787.f3b8b7a2.chunk.js",
     "static/media/intro.png": "/home-cakes/static/media/intro.d7d4c3c61a148b9798d8.png",
     "static/media/carousel-one.png": "/home-cakes/static/media/carousel-one.4cc725d331186b99dbc3.png",
@@ -12,16 +12,18 @@
     "static/media/person.png": "/home-cakes/static/media/person.0074232fbc5bc35562c4.png",
     "static/media/confectionery.svg": "/home-cakes/static/media/confectionery.e6416e8f9f593c6fac89b02d2853712f.svg",
     "static/media/instagram.svg": "/home-cakes/static/media/instagram.8ff7ce92ad753b591ed4c1d03e84c026.svg",
+    "static/media/cross.svg": "/home-cakes/static/media/cross.5695377669b89e0579583bf3bbfde8e5.svg",
     "static/media/facebook.svg": "/home-cakes/static/media/facebook.1d60f030f88d365627c35afd0f0f9d38.svg",
     "index.html": "/home-cakes/index.html",
+    "static/media/envelope.svg": "/home-cakes/static/media/envelope.3cd176b2d055e996d0983d6c2da89199.svg",
     "static/media/checkmark.svg": "/home-cakes/static/media/checkmark.4f1d73ffaaf46f6c5367b635b0117642.svg",
     "static/media/right-arrow.svg": "/home-cakes/static/media/right-arrow.1f7dcb3cbcb39397e351545b0f4aab80.svg",
-    "main.6c1ad416.css.map": "/home-cakes/static/css/main.6c1ad416.css.map",
-    "main.9817c71b.js.map": "/home-cakes/static/js/main.9817c71b.js.map",
+    "main.cd3783e0.css.map": "/home-cakes/static/css/main.cd3783e0.css.map",
+    "main.ef3c9e73.js.map": "/home-cakes/static/js/main.ef3c9e73.js.map",
     "787.f3b8b7a2.chunk.js.map": "/home-cakes/static/js/787.f3b8b7a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c1ad416.css",
-    "static/js/main.9817c71b.js"
+    "static/css/main.cd3783e0.css",
+    "static/js/main.ef3c9e73.js"
   ]
 }
