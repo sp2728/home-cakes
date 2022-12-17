@@ -48,6 +48,9 @@
                     "title": "Second label"
                 }
             ]
+        },
+        "Gallery": {
+            "type": "reviews"
         }
     }
 }

@@ -6,7 +6,10 @@ import { Components, sectionMap } from '../../constants';
 import Footer from '../../sections/footer/footer';
 import facebookIcons from '../../assets/images/facebook.svg';
 import instagramIcon from '../../assets/images/instagram.svg'
-import Sheet from '../../components/sheet/sheet';
+import { SheetPosition } from '../../components/sheet/sheet';
+import Stack from 'react-bootstrap/Stack';
+import Contact from '../../sections/contact/contact';
+
 
 const Home = () => {
 
@@ -16,11 +19,27 @@ const Home = () => {
 
   const [openContact, setOpenContact] = React.useState(false);
 
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  //choose the screen size 
+  const handleResize = () => {
+      if (window.innerWidth < 720) {
+          setIsMobile(true)
+      } else {
+          setIsMobile(false)
+      }
+  }
+
+  React.useEffect(() => {
+    handleResize();
+  }, [])
+
+
   const FloatButtons = () => (
-    <div className='home-float-buttons'>
+    <Stack direction="vertical" className='home-float-buttons'>
       <span className='float-span'><img className='float-icons' src={facebookIcons} /></span>
       <span className='float-span'><img className='float-icons' src={instagramIcon} /></span>
-    </div>
+    </Stack>
   )
 
   return (
@@ -28,9 +47,8 @@ const Home = () => {
       <Navbar sections={Data.sections} applicationName={Data.header.applicationName} handleContactPage={() => setOpenContact(true)} />
       <FloatButtons />
       {sectionsContent}
-      <Sheet open={openContact} position={'right'} handleClose={()=> setOpenContact(false)}/>
+      <Contact position={isMobile? SheetPosition.bottom : SheetPosition.right} open={openContact} handleClose={() => setOpenContact(false)} />
       <Footer />
-      {/* <span className='contact-btn'><Button onClick={() => setOpenContact(true)}> <MarkChatUnread color='primary' /> </Button></span> */}
     </div>
   )
 }

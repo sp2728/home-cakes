@@ -1,5 +1,8 @@
 .navbar {
     height: 8vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
     background-color: rgb(247, 242, 242, 0.7);
 }
 
@@ -40,4 +43,32 @@
     opacity: 1;
     background-color: rgb(123, 63, 0);
     transform: translate3d(0, 0, 0);
+}
+
+.navbar-sheet-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-sheet-close-icon {
+    padding: 15px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    transition: background-color 0.5s ease;
+}
+
+.navbar-sheet-close-icon:hover{
+    background-color: rgb(123, 63, 0, 0.1);
+}
+
+.drawer-link {
+    padding: 20px;
+}
+
+.navbar-sheet-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }

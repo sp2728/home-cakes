@@ -1,5 +1,8 @@
 import './introduction.css';
 import image from '../../assets/images/person.png';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 interface Introduction {
   description: string;
@@ -9,17 +12,19 @@ interface Introduction {
 const Introduction = ({ description, name }: Introduction) => {
 
   return (
-    <div id='introduction' className='introduction'>
-      <div className='intro-container'>
-        <div className='intro-title'> Delicous cake for everyone </div>
-        <div className='intro-description'>{description}</div>
-        <div className='intro-author'>
-          <span> Prepared by: </span>
-          <img className="image" src={image} alt={name} />
-        </div>
-      </div>
-    </div>
+    <Container fluid id='introduction' className='introduction'>
+      <Row>
+        <Col sm='auto' lg={8}>
+          <Col className='intro-title'> Delicous cake for everyone </Col>
+          <Col className='intro-description'>{description}</Col>
+          <div className='intro-author'>
+            <span> Prepared by: </span>
+            <img className="image" src={image} alt={name} />
+          </div>
+        </Col>
+      </Row>
+    </Container>
   )
 }
 
-export default Introduction
+export default Introduction;

@@ -6,10 +6,8 @@
     position: fixed;
     z-index: 999;
     left:20px;
-    top: 45vh;
+    bottom: 30vh;
     width: 40px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     background-color: transparent;
     border-radius: 20px;
@@ -37,8 +35,15 @@
 
 .contact-btn{
     position: fixed;
-    z-index: 999;
+    z-index: 997;
     bottom: 25px;
     right: 25px;
-    text-align: end;
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid rgb(123,63,0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 248, 250, 0.5);
+    box-shadow: inset 0 0 10px rgb(123,63,0, 0.5);
 }
